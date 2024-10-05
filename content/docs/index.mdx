@@ -1,0 +1,256 @@
+---
+title: Introdução à Lógica de Programação com Exemplos da Vida Real
+---
+
+## O que é Lógica de Programação?
+
+Lógica de programação é como ensinar o computador a pensar e tomar decisões. Com ela, você escreve instruções para que o computador faça o que você quer, passo a passo. Vamos usar exemplos do dia a dia para entender melhor esses conceitos e como eles se aplicam ao nosso curso.
+
+---
+
+## Como Executar Esses Scripts
+
+Para executar esses exemplos, siga estas instruções simples:
+
+1. Console do Navegador:
+
+- Abra o navegador (Chrome, Firefox, etc.).
+- Pressione F12 no seu teclado para abrir as ferramentas de desenvolvedor.
+- Vá até a aba Console.
+- Digite ou cole o código no console e pressione Enter para ver o resultado.
+
+2. Plataformas Online:
+
+- Você também pode usar sites como [JSFiddle](https://jsfiddle.net/) ,[CodePen](https://codepen.io/).
+- Cole o código no editor de uma dessas plataformas e execute para ver o resultado.
+
+3. Usando Node.js:
+
+- Se você tem o Node.js instalado, crie um arquivo .js no seu computador e rode no terminal com o comando node nome_do_arquivo.js.
+
+---
+
+## Tipos de Dados Fundamentais
+
+Quando programamos, precisamos lidar com diferentes tipos de informações. Os principais tipos de dados que usaremos são:
+
+### Números (Number)
+
+- Usamos números para representar valores matemáticos como idade, quantidade ou preço.
+
+### Exemplo da vida real:
+
+Você tem 3 maçãs. O número 3 representa a quantidade de maçãs que você tem.
+
+- **Mundo real**: Você tem 3 maçãs.
+- **Programação**: Usamos o número 3 em uma variável.
+
+<Callout type="info" title="Dica">
+Use **let** quando você precisar de uma variável que pode mudar de valor ao longo do tempo. Use **const** para valores que não devem mudar, como configurações ou valores fixos. Evite usar var a menos que você esteja lidando com código legado que precisa manter.o.
+
+</Callout>
+
+```js
+//variavel declarada
+let quantidadeDeMacas = 3;
+// Imprime: 3
+console.log(quantidadeDeMacas);
+```
+---
+
+
+### Texto (String)
+
+- Usamos strings para representar palavras ou frases, como nomes, endereços, ou mensagens.
+
+### Exemplo da vida real:
+
+**Você quer guardar o nome do seu brinquedo favorito**.
+
+- **Mundo real**: Seu brinquedo favorito é um carrinho.
+- **Programação**: Guardamos o nome "Carrinho" numa variável de texto.
+
+```js
+//variavel declarada
+let brinquedoFavorito = "Carrinho";
+// Imprime: Carrinho
+console.log(brinquedoFavorito);
+```
+
+---
+
+### Booleanos (Boolean)
+
+- Os booleanos representam apenas dois estados: verdadeiro (true) ou falso (false). Usamos para tomar decisões.
+
+### Exemplo da vida real:
+
+Você quer saber se hoje está chovendo.
+
+- **Mundo real**: Se está chovendo, a resposta é "sim". Se não, a resposta é "não".
+- **Programação**: Usamos um booleano para responder se está chovendo ou não.
+
+```js
+//variavel declarada
+const estaChovendo = true;
+// Imprime: true
+console.log(estaChovendo);
+```
+
+---
+
+## Arrays: Guardando Múltiplos Valores
+
+Um **array** é como uma lista onde podemos guardar várias informações ao mesmo tempo. É útil quando você quer agrupar várias coisas.
+
+### Exemplo da vida real:
+
+Você tem vários brinquedos e quer guardá-los em um só lugar.
+
+- **Mundo real**: Você tem um carrinho, uma boneca e uma bola, todos guardados numa caixa.
+- **Programação**: Usamos um array para guardar esses brinquedos.
+
+```js
+const brinquedos = ["Carrinho", "Boneca", "Bola"];
+// Imprime: Carrinho
+console.log(brinquedos[0]);
+```
+---
+
+## Objetos: Guardando Vários Detalhes
+
+Um **objeto** é como uma ficha de informações sobre algo. Em vez de guardar apenas um valor, ele permite guardar vários detalhes sobre um mesmo item.
+
+### Exemplo da vida real:
+
+Você tem um cachorro e quer guardar informações sobre ele, como nome, raça e idade.
+
+- **Mundo real**: O cachorro se chama Rex, é da raça Labrador e tem 3 anos.
+- **Programação**: Usamos um objeto para armazenar essas informações.
+
+```js
+const cachorro = {
+  nome: "Rex",
+  raca: "Labrador",
+  idade: 3,
+};
+console.log(cachorro.nome); // Imprime: Rex
+```
+---
+
+
+## Funções: Instruções para o Computador Executar
+
+Uma **função** é um bloco de código que executa uma tarefa específica. É como uma receita que você pode reutilizar sempre que precisar.
+
+### Exemplo da vida real:
+
+Você quer ensinar alguém a amarrar os sapatos.
+
+- **Mundo real**: Você segue um conjunto de passos para amarrar os sapatos.
+- **Programação**: Criamos uma função que executa as etapas para amarrar sapatos.
+
+```js
+function amarrarSapatos() {
+  console.log("Pegar os cadarços ou atacador.");
+  console.log("Cruzá-los.");
+  console.log("Dar um nó.");
+}
+amarrarSapatos(); // Executa a função e imprime as instruções
+```
+---
+
+
+## Condicionais: Tomando Decisões
+
+As condicionais permitem ao computador tomar decisões com base em uma condição. Isso é útil para determinar o que fazer em diferentes situações.
+
+### Exemplo da vida real:
+
+Você quer saber se deve levar um guarda-chuva quando sair.
+
+- **Mundo real**: Se está chovendo, você leva o guarda-chuva. Se não, você não leva.
+- **Programação**: Usamos uma condicional para decidir se devemos pegar o guarda-chuva.
+
+```js
+const estaChovendo = true;
+
+if (estaChovendo) {
+  console.log("Pegue o guarda-chuva.");
+} else {
+  console.log("Pode sair sem guarda-chuva.");
+}
+```
+---
+
+
+## Loops: Repetindo Tarefas
+
+Os loops permitem repetir uma ação várias vezes. Eles são úteis para verificar todos os itens de uma lista, um por um.
+
+### Exemplo da vida real:
+
+Você tem três brinquedos e quer verificar cada um deles.
+
+- **Mundo real**: Você verifica cada brinquedo da sua caixa.
+- **Programação**: Usamos um loop para olhar cada brinquedo do array **brinquedos**.
+
+```js
+const brinquedos = ["Carrinho", "Boneca", "Bola"];
+
+for (let i = 0; i < brinquedos.length; i++) {
+  console.log("Você tem um(a) " + brinquedos[i]);
+}
+```
+
+---
+
+## Exercícios para Praticar
+
+Agora que você conhece os conceitos básicos, aqui estão alguns exercícios para praticar:
+
+### Exercício 1: Criando um array de frutas
+
+- Crie um array chamado **frutas** com as seguintes frutas: maçã, banana, e laranja.
+- Use um loop para imprimir cada fruta na tela.
+
+```js
+const frutas = ["Maçã", "Banana", "Laranja"];
+
+for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+```
+
+### Exercício 2: Criando um objeto para um animal
+
+- Crie um objeto chamado **gato** com as seguintes propriedades: nome, cor, e idade.
+- Imprima os detalhes do gato na tela.
+
+```js
+const gato = {
+  nome: "Mimi",
+  cor: "Cinza",
+  idade: 2,
+};
+
+console.log(gato.nome); // Imprime: Mimi
+console.log(gato.cor); // Imprime: Cinza
+console.log(gato.idade); // Imprime: 2
+```
+
+### Exercício 3: Função com parâmetro
+
+- Crie uma função chamada descreverFruta que recebe o nome de uma fruta como parâmetro e imprime "Eu gosto de [fruta]".
+- Chame a função com diferentes frutas.
+
+```js
+function descreverFruta(fruta) {
+  console.log("Eu gosto de " + fruta);
+}
+
+descreverFruta("Maçã");
+descreverFruta("Banana");
+```
+
+Com esses exemplos e exercícios, você está pronto para entender os conceitos de lógica de programação de forma clara e prática!
